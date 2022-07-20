@@ -11,6 +11,7 @@ namespace SampleWebApiAspNetCore.v2.Controllers
         public ActionResult Get()
         {
             return Ok("2.0");
+            //Added comment
         }
     }
 }
