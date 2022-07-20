@@ -36,6 +36,7 @@ namespace SampleWebApiAspNetCore.v1.Controllers
         [HttpGet(Name = nameof(GetAllFoods))]
         public ActionResult GetAllFoods(ApiVersion version, [FromQuery] QueryParameters queryParameters)
         {
+            //Added in code
             List<FoodEntity> foodItems = _foodRepository.GetAll(queryParameters).ToList();
 
             var allItemCount = _foodRepository.Count();
